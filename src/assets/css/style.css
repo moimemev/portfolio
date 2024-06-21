@@ -1,0 +1,71 @@
+/* https://wess.tistory.com/528 */
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Cafe24SsurroundAir/Cafe24SsurroundAir.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Cafe24SsurroundAir/Cafe24SsurroundAir.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/Cafe24SsurroundAir/Cafe24SsurroundAir.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/Cafe24SsurroundAir/Cafe24SsurroundAir.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/Cafe24SsurroundAir/Cafe24SsurroundAir.ttf') format("truetype");
+    font-display: swap;
+}
+
+body *{
+    font-family: 'Cafe24SsurroundAir';
+}
+
+#intro{
+    background-color: lime;
+    height:100vh;
+}
+
+.intro__inner .intro__text{
+    position: relative;
+}
+
+.intro__inner .intro__text .text{
+    text-align: center;
+    text-transform: uppercase; 
+    position: relative;
+    z-index:100;
+    font-size: 3vw;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.intro__inner .intro__text .img{
+    border-radius: 50%; 
+    overflow: hidden;
+    width:30vh; height:30vh;
+    position: absolute;
+    left:50%; top:50%;
+    transform:translate(-50%, -50%);
+}
+
+.intro__inner .intro__text .img img{
+    width:100%;
+}
+
+#skill{
+    background-color: dodgerblue;
+    ;
+    height:100vh;
+}
+
+
+#site{
+    background-color: crimson;
+    height:100vh;
+}
+
+#portfolio{
+    background-color: pink;
+    height:100vh;
+}
+
+#contact{
+    background-color:yellowgreen;
+    height:100vh;
+}
+
