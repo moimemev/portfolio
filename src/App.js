@@ -1,22 +1,23 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
-import HomeView from './views/HomeView';
+import React, { useEffect } from "react";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import HomeView from "./views/HomeView";
+import smooth from "./utils/smooth";
+import link from "./utils/link";
 
-function App() {
+const App = () => {
+    useEffect(() => {
+        smooth();
+        link();
+    }, []);
 
-  return (
-    <div>
-      {/* 라우터 설정  */}
-      <HashRouter>
-
-        {/* HomveView를 링크로 보여줄께 */}
-        <Routes>
-          <Route path="/" element={<HomeView />} />
-        </Routes>
-
-      </HashRouter>
-    </div>
-  );
-}
+    return (
+        // <BrowserRouter>
+        //     <Routes>
+        //         <Route path="/" element={<HomeView />} />
+        //     </Routes>
+        // </BrowserRouter>
+        <HomeView/>
+    );
+};
 
 export default App;
